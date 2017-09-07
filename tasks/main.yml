@@ -1,0 +1,13 @@
+---
+# tasks file for ansible-test
+
+- name: Install Apache
+  yum:
+    name: httpd
+    state: present
+
+- name: Make sure Apache is started
+  service:
+    name: httpd
+    state: started
+    enabled: yes
