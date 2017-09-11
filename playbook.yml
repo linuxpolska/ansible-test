@@ -1,0 +1,6 @@
+---
+- name: Ansible Test - install and run Apache server
+  hosts: all
+  become: true
+  roles:
+    - role: ansible-test
